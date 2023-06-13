@@ -1,28 +1,31 @@
-# Project Boost
+# Integration of Tobii Eye Tracker with an Online Game
 
-## Game made from: Complete C# Unity Developer 3D Section 3
+This project aims to integrate the Tobii Eye Tracker into a Unity game. The game, sourced from a public GitHub repository ([https://github.com/anthonymendez/Project-Boost.git](https://github.com/anthonymendez/Project-Boost.git)), originally relied on keyboard input for player interaction. By utilizing the Tobii Eye Tracker SDK, we have enhanced the gameplay experience, enabling players to control the game using their eyes.
 
-## <a href = "https://anthonymendez.itch.io/project-boost" > Play on Itch.io! </a>
+## Getting Started
 
-### Game Objective
+To integrate the Tobii Eye Tracker into the Unity game, follow the steps outlined below:
 
-The main objective of the game is land on the green landing pad in all 4 levels. If you die, you have to start over from the beginning.
+### Prerequisites
 
-### Controls
+- Unity: Ensure you have the latest version of Unity installed on your development machine.
+- Tobii Eye Tracker: Obtain the Tobii Eye Tracker hardware and connect it to your computer.
+- Tobii SDK: Download and install the Tobii Eye Tracker SDK from the official Tobii website.
 
-| Key | Controls|
-|-|--------------|
-|W| Thrust |
-|SPACE| Thrust |
-|A| Rotate left |
-|D| Rotate Right |
+### Integration Steps
 
-### About this game
+1. Download the Unity game from the public GitHub repository and open it in the Unity Editor.
+2. Import the Tobii Eye Tracker SDK into your Unity project. This can typically be done by dragging and dropping the SDK files into your Unity project's Assets folder.
+3. In the Unity Editor, locate the main gameplay script or the script responsible for player input.
+4. Modify the player input script to incorporate the Tobii Eye Tracker functionality. This involves utilizing the Tobii Eye Tracker SDK's provided functions to read eye movement data and convert it into meaningful input for the game.
+5. Implement eye-tracking controls within the game mechanics to provide a seamless experience for the player. For example, you might use eye movements to control the player character's gaze direction, aim, or perform actions within the game.
+6. Test the integration by running the game within the Unity Editor and verifying that the Tobii Eye Tracker is accurately capturing eye movement and translating it into game input. We modified the `rocket.cs` file to control the rocket movement (forward and backward depending on eye gaze on the screen).
+7. Iterate and fine-tune the eye-tracking integration to optimize the gameplay experience. Adjust parameters, thresholds, and mapping to ensure precise and intuitive eye control.
+8. Build the final version of the game, which includes the Tobii Eye Tracker integration, and distribute it to players.
 
-A 3D Game made with Unity Personal Edition.
+## Resources
 
-I decided to take <a href = "https://www.udemy.com/unitycourse2">Ben Tristem's Unity 3D Course on Udemy</a> and I love it so far. My only personal gripe with it, is it feels a bit slow as someone who has a bit of experience with Unity. But I'm sticking with it since I've already learned a few things from it.
+Here are some useful resources to aid in the integration process:
 
-### Can I use your game's code?
-
-Yes! Of Course! Do what you want with it!
+- [Tobii Eye Tracker SDK Documentation](https://www.tobiipro.com/product-listing/tobii-pro-sdk/)
+- [Unity Documentation](https://docs.unity3d.com/Documentation/Manual/index.html)
